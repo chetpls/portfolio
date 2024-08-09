@@ -1,4 +1,3 @@
-export const HERO_CONTENT ="sjaofjasdofjaosjfpa jfapejsf";
 export const ABOUT_TEXT = "I am a recent Computer Science graduate with a strong passion for front-end development. Skilled in building responsive and user-friendly web applications using modern technologies like React, JavaScript, HTML, and CSS. Eager to apply my academic knowledge and hands-on project experience to create engaging and effective digital experiences.";
 
 export const PROJECTS=[
