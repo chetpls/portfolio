@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+@layer components {
+  .nav-link {
+    @apply relative cursor-pointer list-none;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] bg-custom-gradient h-[2px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-[100%];
+  }
+}
+
+
+.gradient-icon svg {
+  fill: white;
+}
+.gradient-icon svg:hover{
+  fill: url(#gradient1);
+}
