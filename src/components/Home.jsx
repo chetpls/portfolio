@@ -8,6 +8,13 @@ function Home() {
     window.location = `mailto:${CONTACT.email}`;
   }
 
+  function openResume(){
+    const pdfUrl = "/VichetChim.pdf";
+    
+    // Open the PDF in a new tab
+    window.open(pdfUrl, '_blank');
+  }
+
 
     return (
         <div id='home' className='section'>
@@ -28,9 +35,10 @@ function Home() {
             </button>
                 <button
               type="button"
+              onClick={openResume}
               className="border border-white font-semibold p-3 min-w-32 text-center relative overflow-hidden hover:text-black transition-colors duration-300 group cursor-pointer hover:border-black"
             >
-              DOWNLOAD RESUME
+              VIEW RESUME
               <span
                 aria-hidden="true"
                 className=" bg-custom-gradient absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 z-[-1] "
